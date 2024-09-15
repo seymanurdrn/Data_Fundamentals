@@ -15,7 +15,7 @@ print(yil - dogum_yili)
 
 
 
-
+"""
 #list'de köşeli parantezlerin[] içine virgülle ayrılmış değişkenler listesi tanımlayabiliyoruz
 isim_listesi = ["Ali", "Ali", 2005, "Istanbul", 70.5, True]
 print(type(isim_listesi))
@@ -59,21 +59,41 @@ sonuc = (0 >= 1) and (1 < 2) or (3 == 3) #blokları tek tek çözüp sonra diğe
 print(sonuc)
 
 #IF ve FOR döngüleri
-if True:  #if'den sonra :'ya kadar olan kısım 
+if True:  #if'den sonra :'ya kadar olan kısım if'in koşulu olur. Eğer koşul doğru ise True ise if'in :'dan itibaren boşlukla başlayan tüm satırlar
+    print("Merhaba")     #if koşulunun kodlarıdır, if geçerliyse çalışır. İf'le aynı hizada yazılan kod ise if'den bağımsız çalışır. 
+
+print("The End")
+
+if (2 > 1) and (3 != 2):
+    print("Merhaba")
     print("Merhaba")
 
+print("The End") 
 
+if 6 not in [1, 2, 3, 4, 5]:
+    print("Listede yok")
+elif 6 not in [6, 7, 8, 9,]:
+    print("Naber")
+else:
+    print("Listede var")
 
+#Alıştırma
+kullanici_girisi = input("Mesafeyi giriniz: ") #'1000 K', '1000 M'
+girdi_listesi = kullanici_girisi.split( )
+mesafe = int(girdi_listesi[0])
+birim = girdi_listesi[1].upper()
 
+KM2MILE = 0.621371192
 
+KM_birimleri = ["KM", "K", "KILOMETRE"]
+Mile_birimleri =  ["MILE", "M", "MIL"]
 
-
-
-
-
-
-
-
-
+if birim in KM_birimleri:
+    print("Mesafe mile cinsinden: " + str(mesafe * KM2MILE))
+elif birim in Mile_birimleri:
+    print("Mesafe km cinsinden: " + str(mesafe / KM2MILE))
+else:
+    print("Hatalı birim girdiniz!")
+"""
 
 
