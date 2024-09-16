@@ -1,0 +1,31 @@
+SELECT - * yada sütun adı (sütun filtreleme)
+FROM - employee (tablo ismi)
+WHERE - title = 'Sales Representative' (satır filtreleme)
+
+PRAGMA table_info('order');  data type bakma (sqllite)
+
+commment 
+--
+/*
+*/
+
+WHERE  FirstName LIKE '%A%'   A ile başlayıp herhangi bir karakter gelebilir '%A' bir şeyle başlayıp a ile bitenler 'A%' a ile başlayıp farklı devam edebilir.
+
+WHERE Unitprice BETWEEN …… and .... (iki rakam arasındaki tarihler gelir) 
+
+INSERT INTO employee
+VALUES (10, 'test', 'Sales Manager', 'Mr.')tabloya değer ekleme
+
+SELECT *
+FROM 'Order'
+WHERE shipcountry IN ('Mexico', 'Germany', 'USA') içinde bunların olduğu hepsini getirir
+
+
+
+
+
+ 
+
+
+
+
