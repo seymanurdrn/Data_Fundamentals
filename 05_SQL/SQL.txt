@@ -13,12 +13,40 @@ WHERE  FirstName LIKE '%A%'   A ile başlayıp herhangi bir karakter gelebilir '
 
 WHERE Unitprice BETWEEN …… and .... (iki rakam arasındaki tarihler gelir) 
 
-INSERT INTO employee
+INSERT INTO employee (id, name, .., ..,)
 VALUES (10, 'test', 'Sales Manager', 'Mr.')tabloya değer ekleme
 
 SELECT *
 FROM 'Order'
 WHERE shipcountry IN ('Mexico', 'Germany', 'USA') içinde bunların olduğu hepsini getirir
+
+
+AVG / MAX / MİN / COUNT / SUM
+SELECT avg(freight), max(freight), min(freight) AS "FREİGHT AVG FROM ORDERS" - as diyerek sütun ismini değiştirebilirsin
+FROM 'order'
+
+ROUND fonksiyonu int virgülden sonrasını sınırlama
+SELECT round(avg(freight * 1.5), 2) as 'SET1'
+
+Select count(*)
+FROM 'Product'
+WHERE Unitprice > ROUND((SELECT AVG(Unitprice) FROM 'Product'))
+ORDER BY Unitprice DESC
+
+
+TRUNC 0'a yakın olana yuvarlar 
+FLOOR diğer sayıya yuvarlar
+
+GROUP BY (datayı kategoriye göre ayırır)
+SELECT shipcountry, count(*) 'number of orders'
+FROM 'order'
+GRUP BY shipcountry (neye göre sayıyoruz?) 
+
+ORDER BY(sırala)
+
+
+
+
 
 
 
