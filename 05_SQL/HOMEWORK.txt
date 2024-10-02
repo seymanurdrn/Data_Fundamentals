@@ -1,0 +1,24 @@
+WEEK 1
+
+
+
+WEEK 2
+Q1. Write a query to find how many rows there are from suppliers table where the country is either USA or Germany. Answer = 7
+SELECT count(*)
+FROM supplier
+WHERE country = 'USA' or country = 'Germany' / WHERE country IN ('USA', 'Germany') 
+
+Q2. Write a query to find all products where the price is greater than 18.
+SELECT *
+FROM Product
+WHERE UnitPrice > 18
+
+Q3. Write a query to find how many orders have a freight greater than 32
+SELECT count(*)
+FROM 'Order'
+WHERE freight > 32 
+
+
+
+WEEK 3
+
